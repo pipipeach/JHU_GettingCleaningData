@@ -42,6 +42,10 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
 - there is R script [run_analysis.R]() which transforms the given data to a tidy data set.
 - and the tidy data [HAR-subject-activity-mean.txt] which is produced as an output from the R script.
 
+### Other Files: 
+- Tidy data as a csv file [HAR-subject-activity-mean.csv](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/HAR-subject-activity-mean.csv) which easy on the eyes and for quick data analysis with csv tools.
+- The Code Book as a web document, a metadata file for statisticians as the [CodeBook.Rmd](https://rpubs.com/lindangulopez/651343).
+
 **If you run into any problem feel free to contact me:@lindangulopez**
 
 ### You must:   
