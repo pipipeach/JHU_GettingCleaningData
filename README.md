@@ -1,6 +1,5 @@
-*This Github repository contains the required scripts (and this readme [README.md]() file, necessary for creating a tidy data set for an android 
-sensor motion and posture study, as per the [getting-and-cleaning-data-course-project's](https://www.coursera.org/learn/data-cleaning/home/welcome) specifications, 
-it is one of four files for the assignment submission.*
+*This Github repository contains the required scripts and this readme [README.md](https://github.com/lindangulopez/JHU_GettingCleaningData/edit/master/README.md) file, 
+necessary for creating a tidy data set for an android sensor motion and posture study, as per the [getting-and-cleaning-data-course-project's](https://www.coursera.org/learn/data-cleaning/home/welcome) specifications, it is one of four files for the assignment submission.*
 
 * About the Johns Hopkins University Getting and Cleaning Data Course This course is the third course in the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). 
 
@@ -39,7 +38,7 @@ description below.
 numeric codes. The test and train datasets were combined in the resuting tidy dataset,  "HAR-subject_activity_mean.txt"
 
 # Tidy Assignment Project Files:
-- a code book [CodeBook.md]() which lists the variables of the tidy data set.
+- a code book [CodeBook.md](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/CodeBook.md) which lists the variables of the tidy data set.
 - there is R script [run_analysis.R]() which transforms the given data to a tidy data set.
 - and the tidy data [HAR-subject-activity-mean.txt] which is produced as an output from the R script.
 
