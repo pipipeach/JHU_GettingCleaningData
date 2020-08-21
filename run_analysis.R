@@ -9,7 +9,7 @@ zipfile = paste(data.dir, "UCI-HAR-Dataset.zip", sep="/")
 download.file(url, zipfile, method="curl")
 unzip(zipfile)
 
-# The data files are now in:
+# The data files are now in:C:/Users/angul/OneDrive/R/GettingData/FinalProject
 # ./UCI HAR Dataset
 # ./UCI HAR Dataset/activity_labels.txt
 # ./UCI HAR Dataset/features.txt
@@ -44,8 +44,19 @@ unzip(zipfile)
 # ./UCI HAR Dataset/train/X_train.txt
 # ./UCI HAR Dataset/train/y_train.txt
 
-# Description of the dataset
-# http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+# Description of the dataset:
+##The features selected for this database come from the accelerometer and gyroscope 3-axial 
+##raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix ‘t’ to denote time) 
+##were captured at a constant rate of 50 Hz. and the acceleration signal was then separated 
+##into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) – both using 
+##a low pass Butterworth filter. #The body linear acceleration and angular velocity were 
+##derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the 
+##magnitude of these three-dimensional signals were calculated using the Euclidean norm 
+##(tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+#A Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, 
+##fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. 
+##(Note the ‘f’ to indicate frequency domain signals).
+#source: "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
 
 # Sizes of test and train sets: 10299 observations, matches the description on the web page
 # $ wc -l UCI\ HAR\ Dataset/train/*.txt
