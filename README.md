@@ -18,12 +18,13 @@ R functions, debugging, profiling R code, and organizing and commenting R code. 
 working examples.
 
 
-The course Getting and Cleaning Data, is the third course of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). 
-- It is taught by Jeff Leek, Brian Caffo and Roger D. Peng is a Professors from the [Johns Hopkins School of Public Health](http://www.jhsph.edu/)
-- who teach us how to obtain data from the web, from APIs, from databases and from colleagues in various formats. The main aim was to understand 
+## About the Getting and Cleaning Data: 
+- It is taught by Jeff Leek, Brian Caffo and Roger D. Peng who are Professors from the [Johns Hopkins School of Public Health](http://www.jhsph.edu/)
+- you wil learn how to obtain data from the web, from APIs, from databases and from colleagues in various formats. The main aim was to understand 
 the basics of data cleaning and how to make data “tidy”. Tidy data dramatically speeds up downstream data analysis tasks as well as the components 
 of a complete data set including raw data, processing instructions, codebooks, and processed data, and is the focus of this:
-**the final assignment, shared in this repository.**
+
+# The final course assignment, is shared in this repository.
 
 
 ## caseSTUDY: 
