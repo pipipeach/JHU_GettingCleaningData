@@ -1,7 +1,7 @@
 *This Github repository contains the required scripts and this readme [README.md](https://github.com/lindangulopez/JHU_GettingCleaningData/edit/master/README.md) file, 
 necessary for creating a tidy data set for an android sensor motion and posture study, as per the [getting-and-cleaning-data-course-project's](https://www.coursera.org/learn/data-cleaning/home/welcome) specifications, it is one of four files for the assignment submission.*
 
-# About the Johns Hopkins University Getting and Cleaning Data Course This course is the third course in the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). 
+# The Johns Hopkins University Getting and Cleaning Data Course is the third course in the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). 
 
 It builds on:
 - Course 1: [The Data Scientist's Toolbox](https://www.coursera.org/learn/data-scientists-tools?specialization=jhu-data-science) 
