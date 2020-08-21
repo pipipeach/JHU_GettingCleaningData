@@ -18,7 +18,7 @@ R functions, debugging, profiling R code, and organizing and commenting R code. 
 working examples.
 
 
-The course # Getting and Cleaning Data, is course 3 of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). 
+The course Getting and Cleaning Data, is the third course of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). 
 - It is taught by Jeff Leek, Brian Caffo and Roger D. Peng is a Professors from the [Johns Hopkins School of Public Health](http://www.jhsph.edu/)
 - who teach us how to obtain data from the web, from APIs, from databases and from colleagues in various formats. The main aim was to understand 
 the basics of data cleaning and how to make data “tidy”. Tidy data dramatically speeds up downstream data analysis tasks as well as the components 
@@ -39,8 +39,8 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
 
 # Tidy Assignment Project Files:
 - a code book [CodeBook.md](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/CodeBook.md) which lists the variables of the tidy data set.
-- there is R script [run_analysis.R]() which transforms the given data to a tidy data set.
-- and the tidy data [HAR-subject-activity-mean.txt] which is produced as an output from the R script.
+- there is R script [run_analysis.R](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/run_analysis.R) which transforms the given data to a tidy data set.
+- and the tidy data [HAR-subject-activity-mean.txt](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/HAR-subject-activity-mean.txt) which is produced as an output from the R script.
 
 ### Other Files: 
 - Tidy data as a csv file [HAR-subject-activity-mean.csv](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/HAR-subject-activity-mean.csv) which easy on the eyes and for quick data analysis with csv tools.
@@ -52,6 +52,8 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
 - Make sure that the dplyr package and library(data.table) and library(reshape2) are installed, before running the script. 
 - Please download & source the file "run_analysis.R" from this repository.
 - You must set your directory on the abovementioned R script, before you run it.
+
+
 ***Please see the detailed project description below, to find out how to install the necessary packages and set your directory.***
 
 ### The R Script will run these steps: 
@@ -67,15 +69,22 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
   * X_train.txt
   * y_train.txt
   
-  - Step 3. The script will carry out a step wise transformation to tidy the given data, see details below.
+- Step 3. The script will carry out a step wise transformation to tidy the given data, see details below.
   
-  - Step 4. When done it will generate a csv file, "HAR-subject-activity-mean.txt", the tidy dataset.
+- Step 4. When done it will generate a csv file, "HAR-subject-activity-mean.txt", the tidy dataset.
 
 # Results
 - A dataframe containing the tidy data set, as defined in CodeBook.md, is returned. The same data set is also saved as a csv format file, named
 "HAR-subject_activity_mean.txt", to the working directory.
 
-- Whats next [exploratory-data-analysis](https://www.coursera.org/learn/exploratory-data-analysis?specialization=jhu-data-science); [reproducible-research](https://www.coursera.org/learn/reproducible-research); [statistical-inference](https://www.coursera.org/learn/statistical-inference); [regression-models](https://www.coursera.org/learn/regression-models)[practical-machine-learning](https://www.coursera.org/learn/practical-machine-learning); [data-products](https://www.coursera.org/learn/data-products); [data-science-project](https://www.coursera.org/learn/data-science-project).
+- What's next:
+[exploratory-data-analysis](https://www.coursera.org/learn/exploratory-data-analysis?specialization=jhu-data-science); 
+[reproducible-research](https://www.coursera.org/learn/reproducible-research); 
+[statistical-inference](https://www.coursera.org/learn/statistical-inference); 
+[regression-models](https://www.coursera.org/learn/regression-models)
+[practical-machine-learning](https://www.coursera.org/learn/practical-machine-learning); [data-products](https://www.coursera.org/learn/data-products); 
+[data-science-project](https://www.coursera.org/learn/data-science-project).
+
 
 ## Full Project Description: 
 
@@ -92,16 +101,16 @@ Using its embedded accelerometer and gyroscope, the scientists captured 3-axial 
 
 The obtained dataset was randomly partitioned into two sets, (i) 70% of the volunteers were selected for generating the training data, (ii)  30% of the volunteers were selected for the test data.
 
-### A Code book created with the DataMaid Library
+### A Code book was created with the DataMaid Library
 - Function call: `dataMaid::makeDataReport(data = tidydf, mode = c("summarize", "visualize", "check"), smartNum = FALSE, file = "codebook_tidydf.Rmd", checks = list(character = "showAllFactorLevels", factor = "showAllFactorLevels", labelled = "showAllFactorLevels", haven_labelled = "showAllFactorLevels", numeric = NULL, integer = NULL, logical = NULL, Date = NULL), listChecks = FALSE, maxProbVals = Inf, codebook = TRUE, reportTitle = "Codebook for tidydf
 - then edited and saved as CodeBook.md
 
 
 ### Full Instructions, please follow Steps: 
 
-**STEP 1:**
+**STEP 1:** 
 
-- First setup the ecosystem of packages to work with tidy data
+First setup the ecosystem of packages to work with tidy data
 *dplyr, a part of the tidyverse, in R,  must be installed for the script to run*
 ### The easiest way to get dplyr is to install the whole tidyverse:
 install.packages("tidyverse")
@@ -121,17 +130,15 @@ These all combine naturally with group_by() which allows you to perform any oper
 
 **STEP 2:**
 - download "run_analysis.R"
-- source the script "run_analysis.R", in R or Rstudio sofware 
+- source the script "run_analysis.R", in R or RStudio 
 - edit the **data.dir = path.expand("~/to/your/directory")**
-
-- 2.1 Now you can run the script it will: 
-Download the [unzipped folder](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) in your working directory by running the R script.
+- Now you can run the script it will, download and unzip the [unzipped folder](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) in your working directory by running the R script.
 
 
 **STEP 3:**
-- 3.1 The script, "run_analysis.R", will also open the the "run_analysis.R" file into the working directory.
+- The script, "run_analysis.R", will also open the the "run_analysis.R" file into the working directory.
 
-To run the R script one must have the following files in their working directory, make sure have edited the **data.dir = path.expand("~/to/your/directory")**
+Santity check: you should have the following files in your working directory, if not edit the line the **data.dir = path.expand("~/to/your/directory"): **
 - /train/X_train.txt
 - /test/X_test.txt
 - features.txt
@@ -140,7 +147,7 @@ To run the R script one must have the following files in their working directory
 - /test/subject_test.txt
 - /train/subject_train.txt
 
-- 3.2 And it will do the following step wise transformation: 
+- The R script will perform the following step wise transformation: 
 **Format the feature list with clear variable names.**
 **Rename the columns of both data frames**
 **Subset the dataset, to keep only columns with mean and standard deviation**
@@ -150,8 +157,10 @@ To run the R script one must have the following files in their working directory
 -The merged data frame by subject and activity and written to a tidy dataset:
 "HAR-subject-activity-mean.txt", saved in the working directory.**
 
-**TIDY DATA SET READY FOR ANALYSIS**
+**YOUR TIDY DATA SET READY FOR ANALYSIS**
 
+- you can work with it as it is or 
+- save it as a csv file.
 
 If you run into any problem feel free to contact me:@lindangulopez
 
