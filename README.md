@@ -44,7 +44,7 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
 - and the tidy data [HAR-subject-activity-mean.txt](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/HAR-subject-activity-mean.txt) which is produced as an output from the R script.
 
 ### Other Files: 
-- Tidy data as a csv file [HAR-subject-activity-mean.csv](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/HAR-subject-activity-mean.csv) which easy on the eyes and for quick data analysis with csv tools.
+- Tidy data as a csv file [HAR-subject-activity-mean.csv](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/HAR-subject-activity-mean.csv) which is easy on the eyes and useful for quick data analysis with csv tools.
 - The Code Book as a web document, a metadata file for statisticians as the [codebook_tidydf](https://raw.githubusercontent.com/lindangulopez/JHU_GettingCleaningData/master/codebook_tidydf.html).
 
 **If you run into any problem feel free to contact me:@lindangulopez**
@@ -87,13 +87,13 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
 [data-science-project](https://www.coursera.org/learn/data-science-project).
 
 
-## Full Project Description: 
+#### Detailed Project Description: 
 
 - Goal: get Android motion and posture sensors data ready for analysis
 
 - Created tidy data with [dplyr](https://dplyr.tidyverse.org/), see [data-transformation-cheatsheet-thumbs](https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf).
 
-## About the Data: 
+- About the Data: 
 A Human Activity Recognition database was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.The data was collected from Samsung Galaxy S accelerometer's [motion & position sensors](https://www.mobileprocessing.org/sensors.html). 
 
 The experiments were carried out with a group of volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing the smartphone on their waist. 
@@ -102,44 +102,23 @@ Using its embedded accelerometer and gyroscope, the scientists captured 3-axial 
 
 The obtained dataset was randomly partitioned into two sets, (i) 70% of the volunteers were selected for generating the training data, (ii)  30% of the volunteers were selected for the test data.
 
-### A Code book was created with the DataMaid Library
+- A Code book was created with the DataMaid Library
 - Function call: `dataMaid::makeDataReport(data = tidydf, mode = c("summarize", "visualize", "check"), smartNum = FALSE, file = "codebook_tidydf.Rmd", checks = list(character = "showAllFactorLevels", factor = "showAllFactorLevels", labelled = "showAllFactorLevels", haven_labelled = "showAllFactorLevels", numeric = NULL, integer = NULL, logical = NULL, Date = NULL), listChecks = FALSE, maxProbVals = Inf, codebook = TRUE, reportTitle = "Codebook for tidydf
 - then edited and saved as CodeBook.md
 
 
-### Full Instructions, please follow Steps: 
+- Full Instructions, please follow Steps: 
 
-**STEP 1:** 
-
-First setup the ecosystem of packages to work with tidy data
-*dplyr, a part of the tidyverse, in R,  must be installed for the script to run*
-### The easiest way to get dplyr is to install the whole tidyverse:
-install.packages("tidyverse")
-
-### Alternatively, install just dplyr:
-install.packages("dplyr")
-
+STEP 1: First setup the ecosystem of packages to work with tidy data dplyr, a part of the tidyverse, in R,  must be installed for the script to run. 
+The easiest way to get dplyr is to install the whole tidyverse:install.packages("tidyverse")
+Alternatively, install just dplyr:install.packages("dplyr")
 dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges:
 
-#### mutate() adds new variables that are functions of existing variables
-#### select() picks variables based on their names.
-#### filter() picks cases based on their values.
-#### summarise() reduces multiple values down to a single summary.
-#### arrange() changes the ordering of the rows.
-
-These all combine naturally with group_by() which allows you to perform any operation “by group”.
-
-**STEP 2:**
-- download "run_analysis.R"
-- source the script "run_analysis.R", in R or RStudio 
-- edit the **data.dir = path.expand("~/to/your/directory")**
+STEP 2: Download "run_analysis.R", source the script "run_analysis.R", in R or RStudio , edit the **data.dir = path.expand("~/to/your/directory")**
 - Now you can run the script it will, download and unzip the [unzipped folder](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) in your working directory by running the R script.
 
 
-**STEP 3:**
-- The script, "run_analysis.R", will also open the the "run_analysis.R" file into the working directory.
-
-Santity check: you should have the following files in your working directory, if not edit the line the **data.dir = path.expand("~/to/your/directory"): **
+STEP 3: The script, "run_analysis.R", will also open the the "run_analysis.R" file into the working directory. Santity check: you should have the following files in your working directory, if not edit the line the **data.dir = path.expand("~/to/your/directory"): **
 - /train/X_train.txt
 - /test/X_test.txt
 - features.txt
@@ -148,15 +127,9 @@ Santity check: you should have the following files in your working directory, if
 - /test/subject_test.txt
 - /train/subject_train.txt
 
-- The R script will perform the following step wise transformation: 
-**Format the feature list with clear variable names.**
-**Rename the columns of both data frames**
-**Subset the dataset, to keep only columns with mean and standard deviation**
-**The test and train data frames were merged , with the dplyr package**
+- The R script will perform the following step wise transformation, format the feature list with clear variable names, rename the columns of both data frames, subset the dataset, to keep only columns with mean and standard deviation, merge the test and train data frames, with the dplyr package.
 
-**STEP 4:**
--The merged data frame by subject and activity and written to a tidy dataset:
-"HAR-subject-activity-mean.txt", saved in the working directory.**
+STEP 4:The merged data frame by subject and activity and written to a tidy dataset, "HAR-subject-activity-mean.txt", saved in the working directory.**
 
 **YOUR TIDY DATA SET READY FOR ANALYSIS**
 
