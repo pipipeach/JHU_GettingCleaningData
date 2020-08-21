@@ -1,2 +1,158 @@
-# JHU_GettingCleaningData
-The course will cover obtaining data from the web, from APIs, from databases and from colleagues in various formats. It will also cover the basics of data cleaning and how to make data “tidy”. Tidy data dramatically speed downstream data analysis tasks. The course will also cover the components of a complete data set including raw data, processing instructions, codebooks, and processed data. The course will cover the basics needed for collecting, cleaning, and sharing data.
+* About the Johns Hopkins University Getting and Cleaning Data Course *
+***...***
+This course is the third course in the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). It builds on:
+- Course 1: [The Data Scientist's Toolbox](https://www.coursera.org/learn/data-scientists-tools?specialization=jhu-data-science) In this course you will get an introduction to the main tools and ideas in the data scientist's toolbox, it gives an overview of the data, questions, and tools that data analysts and data scientists work with. There are two components to this course. The first is a conceptual introduction to the ideas behind turning data into actionable knowledge. The second is a practical introduction to the tools that will be used in the program like version control, markdown, git, GitHub, R, and RStudio.
+- Course 2: [R Programming](https://www.coursera.org/learn/r-programming?specialization=jhu-data-science). Will teach you to program in R and how to use R for effective data analysis. You will learn how to install and configure software necessary for a statistical programming environment and describe generic programming language concepts as they are implemented in a high-level statistical language and get practical skills in statistical computing which includes programming in R, reading data into R, accessing R packages, writing R functions, debugging, profiling R code, and organizing and commenting R code. Topics in statistical data analysis will provide working examples.
+***...***
+The course # Getting and Cleaning Data, is course 3 of the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science). 
+- It is taught by Jeff Leek, Brian Caffo and Roger D. Peng is a Professors from the [Johns Hopkins School of Public Health](http://www.jhsph.edu/)
+- who teach us how to obtain data from the web, from APIs, from databases and from colleagues in various formats. The main aim was to understand the basics of data cleaning and how to make data “tidy”. Tidy data dramatically speeds up downstream data analysis tasks as well as the components of a complete data set including raw data, processing instructions, codebooks, and processed data, and is the focus of this:
+**the final assignment, shared in this repository.**
+
+***...***
+***...***...***...***
+***...***...***...******...***...***...***
+***...***...***...***
+***...***
+
+**This Github repository contains the required scripts (and this readme [Readme.md]() file, necessary for creating a tidy data set for an android sensor motion and posture study, as per the [getting-and-cleaning-data-course-project's](https://www.coursera.org/learn/data-cleaning/home/welcome) specifications, it is one of four key files to reproduce the tidy data** 
+***...***
+
+#caseSTUDY: 
+- The activities of daily living (ADL), study gathered Android motion and posture sensors data as two data sets, a test and a train set. 
+
+#main OUTPUT: 
+- A tidy csv dataset, "HAR-subject_activity_mean.txt", ready for future analysis for the ADL study.
+
+#keySTEPS:
+-The multiple text files were converted into one dataset with headers, with logical English names, that is with activity descriptions rather than numeric codes. The test and train datasets were combined in the resuting tidy dataset,  "HAR-subject_activity_mean.txt"
+
+# Tidy Assignment Project Files:
+- a code book [CodeBook.md]() which lists the variables of the tidy data set.
+- there is R script [run_analysis.R]() which transforms the given data to a tidy data set.
+- and the tidy data [HAR-subject-activity-mean.txt] which is produced as an output from the R script.
+
+**If you run into any problem feel free to contact me:@lindangulopez**
+
+# You must:   
+- Make sure that the dplyr package and library(data.table) and library(reshape2) are installed, before running the script. 
+- You must set your directory on the R script, before you run it.
+***Please see the detailed project description below, to find out how to install the necessary packages and set your directory.***
+
+# The R Script will run these steps: 
+- Step 1. It will get this [data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
+- Step 2. It will unzip the folder in your working directory, you will see these files:
+  * activity_labels.txt
+  * features.txt
+  * subjects_train.txt
+  * X_test.txt
+  * y_test.txt
+  * subjects_train.txt
+  * X_train.txt
+  * y_train.txt
+
+# Results
+- A dataframe containing the tidy data set, as defined in CodeBook.md, is returned. The same data set is also saved as a csv format file, named HAR-subject_activity_mean.txt, to the working directory.
+
+***...***
+***...***...***...***
+***...***...***...******...***...***...***
+***...***...***...***
+***...***
+
+- Whats next [exploratory-data-analysis](https://www.coursera.org/learn/exploratory-data-analysis?specialization=jhu-data-science)[reproducible-research](https://www.coursera.org/learn/reproducible-research)[statistical-inference](https://www.coursera.org/learn/statistical-inference)[regression-models](https://www.coursera.org/learn/regression-models)[practical-machine-learning](https://www.coursera.org/learn/practical-machine-learning)[data-products](https://www.coursera.org/learn/data-products)[data-science-project](https://www.coursera.org/learn/data-science-project).
+
+***...***
+***...***...***...***
+***...***...***...******...***...***...***
+***...***...***...***
+***...***
+
+## Project Description: 
+
+#Android motion and posture sensors data ready for analysis:
+
+Created tidy data as per the ReadMe that can be read into R with read.table(header=TRUE) {, , , , , listing any settings you have changed from the default}, with [dplyr](https://dplyr.tidyverse.org/), see [data-transformation-cheatsheet-thumbs](https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf).
+
+### About the Data: 
+A Human Activity Recognition database was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.The data was collected from Samsung Galaxy S accelerometer's [motion & position sensors](https://www.mobileprocessing.org/sensors.html). 
+
+The experiments were carried out with a group of volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing the smartphone on their waist. 
+
+Using its embedded accelerometer and gyroscope, the scientists captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments were video-recorded to label the data manually. 
+
+The obtained dataset was randomly partitioned into two sets, (i) 70% of the volunteers were selected for generating the training data, (ii)  30% of the volunteers were selected for the test data.
+
+***...***
+***...***...***...***
+***...***...***...******...***...***...***
+***...***...***...***
+***...***
+
+*Full Instructions, please follow Steps: *
+
+**STEP 1:**
+
+- First setup the ecosystem of packages to work with tidy data
+*dplyr, a part of the tidyverse, in R,  must be installed for the script to run*
+### The easiest way to get dplyr is to install the whole tidyverse:
+install.packages("tidyverse")
+
+### Alternatively, install just dplyr:
+install.packages("dplyr")
+
+dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges:
+
+### mutate() adds new variables that are functions of existing variables
+### select() picks variables based on their names.
+### filter() picks cases based on their values.
+### summarise() reduces multiple values down to a single summary.
+### arrange() changes the ordering of the rows.
+
+These all combine naturally with group_by() which allows you to perform any operation “by group”.
+
+***...***
+***...***...***...***
+***...***
+
+**STEP 2:**
+- download "run_analysis.R"
+- source the script "run_analysis.R", in R or Rstudio sofware 
+- edit the **data.dir = path.expand("~/to/your/directory")**
+
+- 2.1 Now you can run the script it will: 
+Download the [unzipped folder](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) in your working directory by running the R script.
+
+***...***
+***...***...***...***
+***...***
+
+**STEP 3:**
+- 3.1 The script, "run_analysis.R", will also open the the "run_analysis.R" file into the working directory.
+
+To run the R script one must have the following files in their working directory, make sure have edited the **data.dir = path.expand("~/to/your/directory")**
+- /train/X_train.txt
+- /test/X_test.txt
+- features.txt
+- /test/y_test.txt
+- /train/y_train.txt
+- /test/subject_test.txt
+- /train/subject_train.txt
+
+- 3.2 And it will do the following step wise transformation: 
+**Format the feature list with clear variable names.**
+**Rename the columns of both data frames**
+**Subset the dataset, to keep only columns with mean and standard deviation**
+**The test and train data frames were merged , with the dplyr package**
+**The merged data frame by subject and activity and written to a tidy dataset, "HAR-subject-activity-mean.txt" in the working directory.**
+
+
+If you run into any problem feel free to contact me:@lindangulopez
+
+
+
+
+
+
+
