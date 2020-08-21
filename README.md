@@ -45,7 +45,7 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
 
 ### Other Files: 
 - Tidy data as a csv file [HAR-subject-activity-mean.csv](https://github.com/lindangulopez/JHU_GettingCleaningData/blob/master/HAR-subject-activity-mean.csv) which is easy on the eyes and useful for quick data analysis with csv tools.
-- The Code Book as a web document, a metadata file for statisticians as the [codebook_tidydf](https://raw.githubusercontent.com/lindangulopez/JHU_GettingCleaningData/master/codebook_tidydf.html).
+- The Code Book as a web document, a metadata file for statisticians as the [codebook_tidydf](https://rpubs.com/lindangulopez/651343).
 
 **If you run into any problem feel free to contact me:@lindangulopez**
 
@@ -87,7 +87,7 @@ numeric codes. The test and train datasets were combined in the resuting tidy da
 [data-science-project](https://www.coursera.org/learn/data-science-project).
 
 
-#### Detailed Project Description: 
+##Detailed Project Description: 
 
 - Goal: get Android motion and posture sensors data ready for analysis
 
